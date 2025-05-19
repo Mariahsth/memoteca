@@ -89,6 +89,7 @@ async function manipularSubmissaoFormulario(event){
         }else{
             await api.salvarPensamentos({conteudo, autoria, data});
         }
+        ui.limparFormulario()
         ui.renderizarPensamentos();
 
     } catch{
