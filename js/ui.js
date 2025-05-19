@@ -128,7 +128,6 @@ const ui = {
         li.appendChild(pensamentoData)
         li.appendChild(icones);
         listaPensamentos.appendChild(li);
-        await ui.renderizarPensamentos();
     },
 
     limparFormulario() {
