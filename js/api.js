@@ -1,4 +1,4 @@
-const URL_BASE="http://localhost:3000"
+const URL_BASE="https://memoteca-x9dd.onrender.com"
 
 const converterStringParaData=(dataString)=>{
     const [ano, mes, dia] = dataString.split("-");
