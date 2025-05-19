@@ -77,7 +77,6 @@ const ui = {
         botaoEditar.classList.add("botao-editar");
         botaoEditar.onclick=()=>{
             ui.preencherFormulario(pensamento.id);
-            limparFormulario()
         }
         const iconeEditar = document.createElement("img")
         iconeEditar.src = "assets/imagens/icone-editar.png"
