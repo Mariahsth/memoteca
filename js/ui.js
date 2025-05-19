@@ -87,6 +87,7 @@ const ui = {
         botaoExcluir.onclick=async()=>{
             try {
                 await api.excluirPensamento(pensamento);
+                await ui.renderizarPensamentos();
             } catch (error) {
                 alert("Erro ao excluir pensamento")
             }
@@ -103,6 +104,7 @@ const ui = {
         botaoFavoritar.onclick=async()=>{
             try {
                 await api.atualizarFavorito(pensamento.id, !pensamento.favorito)
+                await ui.renderizarPensamentos();
             } catch (error) {
                 alert("Erro no botão favoritar")
             }
@@ -126,6 +128,7 @@ const ui = {
         li.appendChild(pensamentoData)
         li.appendChild(icones);
         listaPensamentos.appendChild(li);
+        await ui.renderizarPensamentos();
     },
 
     limparFormulario() {
